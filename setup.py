@@ -1,4 +1,5 @@
 from setuptools import setup, find_packages
+import os
 import glob
 
 package_name = 'tree_navigation'
@@ -11,8 +12,8 @@ setup(
         ('share/ament_index/resource_index/packages',
          ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        ('share/' + package_name + '/launch', glob('launch/*.py')),
-        ('share/' + package_name + '/config', glob('config/*.yaml'))
+        ('share/' + package_name + '/launch', ['launch/tree_navigation_launch.py']),
+        ('share/' + package_name + '/config', ['config/tree_params.yaml']),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
