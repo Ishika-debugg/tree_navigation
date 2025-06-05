@@ -1,0 +1,17 @@
+tree_detector:
+  ros__parameters:
+    min_area: 500
+    detection_rate: 30.0
+    brown_hsv_lower: [7, 149, 107]
+    brown_hsv_upper: [17, 209, 167]
+
+brown_navigator:
+  ros__parameters:
+    forward_speed: 0.3
+    turn_speed: 0.2
+    min_color_area: 500
+    center_tolerance: 50
+
+tree_navigation_coordinator:
+  ros__parameters:
+    status_update_rate: 2.0
