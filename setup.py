@@ -10,10 +10,10 @@ setup(
     packages=find_packages(),
     data_files=[
         ('share/ament_index/resource_index/packages',
-         ['resource/' + package_name]),
+            ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        ('share/' + package_name + '/launch', ['launch/tree_navigation_launch.py']),
-        ('share/' + package_name + '/config', ['config/tree_params.yaml']),
+        ('share/' + package_name + '/launch', ['launch/tree_navigation_launch.py']),  # ✅ Keep
+        ('share/' + package_name + '/config', ['config/tree_params.yaml']), 
     ],
     install_requires=['setuptools'],
     zip_safe=True,
