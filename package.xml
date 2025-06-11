@@ -1,19 +1,24 @@
 <?xml version="1.0"?>
 <package format="3">
   <name>tree_navigation</name>
-  <version>1.0.0</version>
-  <description>Tree detection and coordinated navigation for ROSBot</description>
-  <maintainer email="your.email@example.com">Your Name</maintainer>
+  <version>0.0.0</version>
+  <description>Waypoint navigation package for tree-row environment</description>
+
+  <maintainer email="your@email.com">your_name</maintainer>
   <license>MIT</license>
 
+  <buildtool_depend>ament_python</buildtool_depend>
+
   <depend>rclpy</depend>
-  <depend>sensor_msgs</depend>
   <depend>geometry_msgs</depend>
-  <depend>std_msgs</depend>
-  <depend>visualization_msgs</depend>
-  <depend>cv_bridge</depend>
-  <depend>tf2_ros</depend>
-  <depend>tf2_geometry_msgs</depend>
+  <depend>nav2_msgs</depend>
+  <depend>tf_transformations</depend>
+
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>nav2_msgs</exec_depend>
+  <exec_depend>tf_transformations</exec_depend>
+  <exec_depend>python3-yaml</exec_depend>
 
   <export>
     <build_type>ament_python</build_type>
